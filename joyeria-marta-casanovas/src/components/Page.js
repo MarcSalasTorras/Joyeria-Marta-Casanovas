@@ -1,5 +1,6 @@
 import React from 'react'
-import './Paje.sass'
+import './Page.sass'
+
 export default ({ name, children})  => {
     return <section className={`page page--${name}`}>
     <div className="page__container">
