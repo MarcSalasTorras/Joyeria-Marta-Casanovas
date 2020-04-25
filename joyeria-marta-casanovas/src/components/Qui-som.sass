@@ -1,65 +1,77 @@
 .quisom
     height: 90vh
+    width: 100vw
+    background-color: rgb(59,35,51)
     &__header
-        margin: 2.5%
+        margin: 0
         margin-bottom: 0
-        height: 50vh
-        width: 95%
-        background-image: url(../img/quiSom-header.jpg)
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
-        position: relative
-        &--filtro
-            color: red
-            height: 100%
-            width: 100%
-            background-color: #3b233371
+        height: 6vh
+        width: 100%
+        background-color: rgb(59,35,51)
         h1
             text-align: center
             margin: 0
             padding: 0
-            padding-top: 22vh
+            margin-left: 63%
             font-size: 300%
-            color: white
-    &__definicio
-        margin: 0
-        align-self: center
-        margin-left: 2.5%
-        margin-right: 2.5%
-        margin-bottom: 2.5%
-        font-size: 200%
-        color: white
-        height: 6vh
-        width: 95%
-        text-align: center
-        background-color: #7d6b21b4
+            width: 30%
+            background-color: white
+            color: rgb(125,107,33)
+            transition: 2s
+            animation: 1.5s ease-out 0s 1 slideInFromLeft
+            border: 5px solid rgb(125,107,33)
+            border-radius: 10px
+        onlo
     &__body
-        margin: 0
+        height: 80vh
         display: flex
+        margin: 0
+        margin-top: 5%
         flex-direction: row
         justify-content: space-between
+        background-image: url('../img/slider1.jpg')
+        background-size: 100% 100%
+        background-repeat: no-repeat
     &__llista
         margin: 0
         padding: 0
+        margin-top: 15%
         padding-top: 20px
-        width: 50vw
-        height: 60vh
+        height: 50vh
         list-style: none
         li
-            height: 20%
-            font-size: 200%
-            margin-left: 50px
+            font-size: 250%
+            margin-top: 20px
+            padding-left: 50px
             margin-right: 50px
+            padding-right: 25px
             font-weight: bold
-            border-bottom: 3px solid rgb(125,107,33)
+            background-color: white
+            border-right: 3px solid #e01414
+            border-bottom: 3px solid #e01414
+            border-radius: 10px
+            color: rgb(125,107,33)
+            animation: mymove 1s
+        li:
     &__slide
         margin: 0
         padding: 0
-        width: 50vw
-        height: 60vh
+        width: 75vw
+        height: 70vh
         .img
-            width: 50vw
-            height: 60vh
-
-
+            width: 100vw
+            height: 80vh
+            background-size: 100% 100%
+            background-repeat: no-repeat
+@keyframes slideInFromLeft 
+    0%
+        transform: translateX(-200%)
+  
+    100%
+        transform: translateX(0)
+@keyframes mymove 
+    0%
+        transform: translateX(-100%)
+  
+    100%
+        transform: translateX(0)
